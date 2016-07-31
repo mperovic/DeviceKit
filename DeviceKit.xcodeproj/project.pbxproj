@@ -6,6 +6,23 @@
 	objectVersion = 47;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		9531B4791D4E59D500DD63FD /* DeviceKit */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9531B47A1D4E59D500DD63FD /* Build configuration list for PBXAggregateTarget "DeviceKit" */;
+			buildPhases = (
+			);
+			dependencies = (
+				9531B4841D4E5A5D00DD63FD /* PBXTargetDependency */,
+				9531B4821D4E5A5A00DD63FD /* PBXTargetDependency */,
+				9531B4801D4E5A5600DD63FD /* PBXTargetDependency */,
+				9531B47E1D4E5A5100DD63FD /* PBXTargetDependency */,
+			);
+			name = DeviceKit;
+			productName = DeviceKit;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		951E3A0F1C61549400261610 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E3A0D1C61549400261610 /* Device.swift */; };
 		951E3A101C61549400261610 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951E3A0D1C61549400261610 /* Device.swift */; };
@@ -68,6 +85,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		9531B47D1D4E5A5100DD63FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95CBDB641BFD2B440065FC66 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95CBDB6E1BFD2B5F0065FC66;
+			remoteInfo = "DeviceKit-iOS";
+		};
+		9531B47F1D4E5A5600DD63FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95CBDB641BFD2B440065FC66 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95CBDB8B1BFD2B720065FC66;
+			remoteInfo = "DeviceKit-tvOS";
+		};
+		9531B4811D4E5A5A00DD63FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95CBDB641BFD2B440065FC66 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95EBDC441CB141D6004E04B2;
+			remoteInfo = "DeviceKit-macOS";
+		};
+		9531B4831D4E5A5D00DD63FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95CBDB641BFD2B440065FC66 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95EBDC611CB14580004E04B2;
+			remoteInfo = "DeviceKit-watchOS";
+		};
 		95CBDB7B1BFD2B5F0065FC66 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 95CBDB641BFD2B440065FC66 /* Project object */;
@@ -113,7 +158,7 @@
 		95E59CDD1CB1C88B00D16E0D /* DeviceInternals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeviceInternals.swift; path = Source/DeviceInternals.swift; sourceTree = "<group>"; };
 		95EBDC451CB141D6004E04B2 /* DeviceKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DeviceKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95EBDC471CB141D6004E04B2 /* DeviceKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceKit.h; sourceTree = "<group>"; };
-		95EBDC4E1CB141D6004E04B2 /* DeviceKit-OSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DeviceKit-OSXTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		95EBDC4E1CB141D6004E04B2 /* DeviceKit-macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DeviceKit-macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95EBDC531CB141D6004E04B2 /* Tests_OSX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Tests_OSX.swift; path = Tests/Tests_OSX.swift; sourceTree = "<group>"; };
 		95EBDC621CB14580004E04B2 /* DeviceKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DeviceKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95EBDC6A1CB14A55004E04B2 /* Tests_Shared.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Tests_Shared.swift; path = Tests/Tests_Shared.swift; sourceTree = "<group>"; };
@@ -246,7 +291,7 @@
 				95CBDB8C1BFD2B720065FC66 /* DeviceKit.framework */,
 				95CBDB951BFD2B720065FC66 /* DeviceKit-tvOSTests.xctest */,
 				95EBDC451CB141D6004E04B2 /* DeviceKit.framework */,
-				95EBDC4E1CB141D6004E04B2 /* DeviceKit-OSXTests.xctest */,
+				95EBDC4E1CB141D6004E04B2 /* DeviceKit-macOSTests.xctest */,
 				95EBDC621CB14580004E04B2 /* DeviceKit.framework */,
 			);
 			name = Products;
@@ -364,9 +409,9 @@
 			productReference = 95CBDB951BFD2B720065FC66 /* DeviceKit-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		95EBDC441CB141D6004E04B2 /* DeviceKit-OSX */ = {
+		95EBDC441CB141D6004E04B2 /* DeviceKit-macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 95EBDC5A1CB141D6004E04B2 /* Build configuration list for PBXNativeTarget "DeviceKit-OSX" */;
+			buildConfigurationList = 95EBDC5A1CB141D6004E04B2 /* Build configuration list for PBXNativeTarget "DeviceKit-macOS" */;
 			buildPhases = (
 				95EBDC401CB141D6004E04B2 /* Sources */,
 				95EBDC411CB141D6004E04B2 /* Frameworks */,
@@ -377,14 +422,14 @@
 			);
 			dependencies = (
 			);
-			name = "DeviceKit-OSX";
+			name = "DeviceKit-macOS";
 			productName = "DeviceKit-OSX";
 			productReference = 95EBDC451CB141D6004E04B2 /* DeviceKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		95EBDC4D1CB141D6004E04B2 /* DeviceKit-OSXTests */ = {
+		95EBDC4D1CB141D6004E04B2 /* DeviceKit-macOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 95EBDC5B1CB141D6004E04B2 /* Build configuration list for PBXNativeTarget "DeviceKit-OSXTests" */;
+			buildConfigurationList = 95EBDC5B1CB141D6004E04B2 /* Build configuration list for PBXNativeTarget "DeviceKit-macOSTests" */;
 			buildPhases = (
 				95EBDC4A1CB141D6004E04B2 /* Sources */,
 				95EBDC4B1CB141D6004E04B2 /* Frameworks */,
@@ -395,9 +440,9 @@
 			dependencies = (
 				95EBDC511CB141D6004E04B2 /* PBXTargetDependency */,
 			);
-			name = "DeviceKit-OSXTests";
+			name = "DeviceKit-macOSTests";
 			productName = "DeviceKit-OSXTests";
-			productReference = 95EBDC4E1CB141D6004E04B2 /* DeviceKit-OSXTests.xctest */;
+			productReference = 95EBDC4E1CB141D6004E04B2 /* DeviceKit-macOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		95EBDC611CB14580004E04B2 /* DeviceKit-watchOS */ = {
@@ -425,8 +470,14 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				TargetAttributes = {
+					9531B4791D4E59D500DD63FD = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = SWR98KT795;
+						DevelopmentTeamName = "Dennis Weissmann";
+						ProvisioningStyle = Automatic;
+					};
 					95CBDB6E1BFD2B5F0065FC66 = {
 						CreatedOnToolsVersion = 7.1.1;
 					};
@@ -466,9 +517,10 @@
 				95CBDB781BFD2B5F0065FC66 /* DeviceKit-iOSTests */,
 				95CBDB8B1BFD2B720065FC66 /* DeviceKit-tvOS */,
 				95CBDB941BFD2B720065FC66 /* DeviceKit-tvOSTests */,
-				95EBDC441CB141D6004E04B2 /* DeviceKit-OSX */,
-				95EBDC4D1CB141D6004E04B2 /* DeviceKit-OSXTests */,
+				95EBDC441CB141D6004E04B2 /* DeviceKit-macOS */,
+				95EBDC4D1CB141D6004E04B2 /* DeviceKit-macOSTests */,
 				95EBDC611CB14580004E04B2 /* DeviceKit-watchOS */,
+				9531B4791D4E59D500DD63FD /* DeviceKit */,
 			);
 		};
 /* End PBXProject section */
@@ -660,6 +712,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		9531B47E1D4E5A5100DD63FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95CBDB6E1BFD2B5F0065FC66 /* DeviceKit-iOS */;
+			targetProxy = 9531B47D1D4E5A5100DD63FD /* PBXContainerItemProxy */;
+		};
+		9531B4801D4E5A5600DD63FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95CBDB8B1BFD2B720065FC66 /* DeviceKit-tvOS */;
+			targetProxy = 9531B47F1D4E5A5600DD63FD /* PBXContainerItemProxy */;
+		};
+		9531B4821D4E5A5A00DD63FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95EBDC441CB141D6004E04B2 /* DeviceKit-macOS */;
+			targetProxy = 9531B4811D4E5A5A00DD63FD /* PBXContainerItemProxy */;
+		};
+		9531B4841D4E5A5D00DD63FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95EBDC611CB14580004E04B2 /* DeviceKit-watchOS */;
+			targetProxy = 9531B4831D4E5A5D00DD63FD /* PBXContainerItemProxy */;
+		};
 		95CBDB7C1BFD2B5F0065FC66 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 95CBDB6E1BFD2B5F0065FC66 /* DeviceKit-iOS */;
@@ -672,16 +744,53 @@
 		};
 		95EBDC511CB141D6004E04B2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 95EBDC441CB141D6004E04B2 /* DeviceKit-OSX */;
+			target = 95EBDC441CB141D6004E04B2 /* DeviceKit-macOS */;
 			targetProxy = 95EBDC501CB141D6004E04B2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		9531B47B1D4E59D500DD63FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		9531B47C1D4E59D500DD63FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
 		95CBDB681BFD2B440065FC66 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
@@ -689,6 +798,21 @@
 		95CBDB691BFD2B440065FC66 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 			};
 			name = Release;
 		};
@@ -859,6 +983,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -951,6 +1076,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hotactionstudios.DeviceKit-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -1119,6 +1245,7 @@
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VALIDATE_PRODUCT = YES;
@@ -1211,6 +1338,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1235,6 +1363,7 @@
 				CLANG_WARN_ASSIGN_ENUM = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_CXX0X_EXTENSIONS = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -1273,7 +1402,7 @@
 				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
 				GCC_UNROLL_LOOPS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_MISSING_NEWLINE = NO;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
 				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
@@ -1290,16 +1419,18 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				LLVM_LTO = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "me.dennisweissmann.DeviceKit-OSX";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.dennisweissmann.DeviceKit-macOS";
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = DeviceKit;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1324,6 +1455,7 @@
 				CLANG_WARN_ASSIGN_ENUM = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_CXX0X_EXTENSIONS = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -1358,7 +1490,7 @@
 				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
 				GCC_UNROLL_LOOPS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_MISSING_NEWLINE = NO;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
 				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
@@ -1375,15 +1507,18 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				LLVM_LTO = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "me.dennisweissmann.DeviceKit-OSX";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.dennisweissmann.DeviceKit-macOS";
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				PRODUCT_NAME = DeviceKit;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1430,7 +1565,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "me.dennisweissmann.DeviceKit-OSXTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.dennisweissmann.DeviceKit-macOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1473,9 +1608,10 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "me.dennisweissmann.DeviceKit-OSXTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.dennisweissmann.DeviceKit-macOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
@@ -1641,6 +1777,7 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1652,6 +1789,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9531B47A1D4E59D500DD63FD /* Build configuration list for PBXAggregateTarget "DeviceKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9531B47B1D4E59D500DD63FD /* Debug */,
+				9531B47C1D4E59D500DD63FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		95CBDB671BFD2B440065FC66 /* Build configuration list for PBXProject "DeviceKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1697,7 +1842,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		95EBDC5A1CB141D6004E04B2 /* Build configuration list for PBXNativeTarget "DeviceKit-OSX" */ = {
+		95EBDC5A1CB141D6004E04B2 /* Build configuration list for PBXNativeTarget "DeviceKit-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				95EBDC561CB141D6004E04B2 /* Debug */,
@@ -1706,7 +1851,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		95EBDC5B1CB141D6004E04B2 /* Build configuration list for PBXNativeTarget "DeviceKit-OSXTests" */ = {
+		95EBDC5B1CB141D6004E04B2 /* Build configuration list for PBXNativeTarget "DeviceKit-macOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				95EBDC581CB141D6004E04B2 /* Debug */,

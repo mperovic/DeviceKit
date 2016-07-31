@@ -6,34 +6,36 @@
 //
 //===----------------------------------------------------------------------===//
 
-import class Foundation.NSProcessInfo
-import struct Foundation.NSOperatingSystemVersion
+import class Foundation.ProcessInfo
+import struct Foundation.OperatingSystemVersion
+import var Darwin.sys.sysctl.CTL_KERN
+import var Darwin.sys.sysctl.KERN_OSVERSION
 
 /**
  This enum provides information about the operating system the app is running
  on. It is not bound to a specific device which means that possible future
- combinations like OS X on an iPad or Linux on an iPhone can be represented.
+ combinations like macOS on an iPad or Linux on an iPhone can be represented.
 
  - iOS:     The operating system is iOS
  - watchOS: The operating system is watchOS
  - tvOS:    The operating system is tvOS
- - macOS:   The operating system is OS X
+ - macOS:   The operating system is macOS
  - linux:   The operating system is Linux
  - android: The operating system is Android
  - freeBSD: The operating system is FreeBSD
  */
 public enum OperatingSystem: CustomStringConvertible {
 
-  case iOS(version: NSOperatingSystemVersion)
-  case watchOS(version: NSOperatingSystemVersion)
-  case tvOS(version: NSOperatingSystemVersion)
-  case macOS(version: NSOperatingSystemVersion)
-  case linux(version: NSOperatingSystemVersion)
-  case android(version: NSOperatingSystemVersion)
-  case freeBSD(version: NSOperatingSystemVersion)
+  case iOS(version: OperatingSystemVersion)
+  case watchOS(version: OperatingSystemVersion)
+  case tvOS(version: OperatingSystemVersion)
+  case macOS(version: OperatingSystemVersion)
+  case linux(version: OperatingSystemVersion)
+  case android(version: OperatingSystemVersion)
+  case freeBSD(version: OperatingSystemVersion)
 
   public init() {
-    let version = NSProcessInfo.processInfo().operatingSystemVersion
+    let version = ProcessInfo.processInfo.operatingSystemVersion
     #if os(iOS)
       self = .iOS(version: version)
     #elseif os(watchOS)
@@ -41,7 +43,7 @@ public enum OperatingSystem: CustomStringConvertible {
     #elseif os(tvOS)
       self = .tvOS(version: version)
     #elseif os(OSX)
-      self = .OSX(version: version)
+      self = .macOS(version: version)
     #elseif os(Linux)
       self = .linux(version: version)
     #elseif os(Android)
@@ -53,19 +55,19 @@ public enum OperatingSystem: CustomStringConvertible {
 
   public var description: String {
     switch self {
-    case iOS: return "iOS"
-    case watchOS: return "watchOS"
-    case tvOS: return "tvOS"
-    case macOS: return "OS X"
-    case linux: return "Linux"
-    case android: return "Android"
-    case freeBSD: return "FreeBSD"
+    case .iOS: return "iOS"
+    case .watchOS: return "watchOS"
+    case .tvOS: return "tvOS"
+    case .macOS: return "macOS"
+    case .linux: return "Linux"
+    case .android: return "Android"
+    case .freeBSD: return "FreeBSD"
     }
   }
 
 }
 
-extension NSOperatingSystemVersion {
+extension OperatingSystemVersion {
 
   private static func buildNumber() -> String? {
     return sysctl(identifier: [CTL_KERN, KERN_OSVERSION])

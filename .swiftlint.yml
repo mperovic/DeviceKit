@@ -5,14 +5,3 @@
 # Copyright © 2015 - 2016 Dennis Weissmann and all project contributors
 #
 #===------------------------------------------------------------------------===#
-
-excluded: # paths to ignore during linting. overridden by `included`.
-
-disabled_rules: 
-  - type_name
-  - line_length
-  - force_cast
-
-cyclomatic_complexity:
-  - 20 # warning
-  - 40 # error

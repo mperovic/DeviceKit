@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "95CBDB6E1BFD2B5F0065FC66"
+               BlueprintIdentifier = "95EBDC611CB14580004E04B2"
                BuildableName = "DeviceKit.framework"
-               BlueprintName = "DeviceKit-iOS"
+               BlueprintName = "DeviceKit-watchOS"
                ReferencedContainer = "container:DeviceKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -26,28 +26,10 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "95CBDB781BFD2B5F0065FC66"
-               BuildableName = "DeviceKit-iOSTests.xctest"
-               BlueprintName = "DeviceKit-iOSTests"
-               ReferencedContainer = "container:DeviceKit.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "95CBDB6E1BFD2B5F0065FC66"
-            BuildableName = "DeviceKit.framework"
-            BlueprintName = "DeviceKit-iOS"
-            ReferencedContainer = "container:DeviceKit.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -64,9 +46,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "95CBDB6E1BFD2B5F0065FC66"
+            BlueprintIdentifier = "95EBDC611CB14580004E04B2"
             BuildableName = "DeviceKit.framework"
-            BlueprintName = "DeviceKit-iOS"
+            BlueprintName = "DeviceKit-watchOS"
             ReferencedContainer = "container:DeviceKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -82,9 +64,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "95CBDB6E1BFD2B5F0065FC66"
+            BlueprintIdentifier = "95EBDC611CB14580004E04B2"
             BuildableName = "DeviceKit.framework"
-            BlueprintName = "DeviceKit-iOS"
+            BlueprintName = "DeviceKit-watchOS"
             ReferencedContainer = "container:DeviceKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

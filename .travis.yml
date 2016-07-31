@@ -7,7 +7,7 @@
 #===------------------------------------------------------------------------===#
 
 language: objective-c
-osx_image: xcode7.3
+osx_image: xcode8
 
 env:
     global:
@@ -17,10 +17,10 @@ env:
         - IOS_FRAMEWORK_SCHEME="DeviceKit-iOS"
         - OSX_FRAMEWORK_SCHEME="DeviceKit-OSX"
         - TVOS_FRAMEWORK_SCHEME="DeviceKit-tvOS"
-        - IOS_SDK=iphonesimulator9.3
+        - IOS_SDK=iphonesimulator10
         - OSX_SDK=macosx10.11
-        - TVOS_SDK=appletvsimulator9.2
-        - WATCHOS_SDK=watchsimulator2.2
+        - TVOS_SDK=appletvsimulator10
+        - WATCHOS_SDK=watchsimulator30
     matrix:
         include:
             - env: JOB=OSX_Xcode
@@ -52,16 +52,16 @@ script:
   - if [ $POD_LINT == "YES" ]; then
     pod lib lint;
     fi
-################################### OS X SPM ###################################
+################################### macOS SPM ###################################
 script:
   - swift build
   - .build/Debug/DeviceKitTests
 env: JOB=OSX_SPM
 os: osx
-osx_image: xcode7.3
+osx_image: xcode8
 language: objective-c
 before_install:
-  - export SWIFT_VERSION=swift-DEVELOPMENT-SNAPSHOT-2016-03-24-a
+  - export SWIFT_VERSION=swift-DEVELOPMENT-SNAPSHOT-2016-07-29-a
   - curl -O https://swift.org/builds/development/xcode/$(SWIFT_VERSION)/$(SWIFT_VERSION)-osx.pkg
   - sudo installer -pkg $(SWIFT_VERSION)-osx.pkg -target /
   - export PATH=/Library/Developer/Toolchains/$(SWIFT_VERSION).xctoolchain/usr/bin:"${PATH}"

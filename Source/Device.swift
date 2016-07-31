@@ -27,7 +27,7 @@ extension Device {
 
 extension Device {
 
-  private init?() {
+  fileprivate init?() {
     if let device = Self.mapIdentifierToDevice(identifier: Self.deviceIdentifier) as? Self {
       self = device
     } else {

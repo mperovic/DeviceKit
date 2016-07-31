@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "95CBDB6E1BFD2B5F0065FC66"
-               BuildableName = "DeviceKit.framework"
-               BlueprintName = "DeviceKit-iOS"
+               BlueprintIdentifier = "9531B4791D4E59D500DD63FD"
+               BuildableName = "DeviceKit"
+               BlueprintName = "DeviceKit"
                ReferencedContainer = "container:DeviceKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -26,7 +26,8 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
@@ -38,13 +39,33 @@
                ReferencedContainer = "container:DeviceKit.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "95EBDC4D1CB141D6004E04B2"
+               BuildableName = "DeviceKit-macOSTests.xctest"
+               BlueprintName = "DeviceKit-macOSTests"
+               ReferencedContainer = "container:DeviceKit.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "95CBDB941BFD2B720065FC66"
+               BuildableName = "DeviceKit-tvOSTests.xctest"
+               BlueprintName = "DeviceKit-tvOSTests"
+               ReferencedContainer = "container:DeviceKit.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "95CBDB6E1BFD2B5F0065FC66"
-            BuildableName = "DeviceKit.framework"
-            BlueprintName = "DeviceKit-iOS"
+            BlueprintIdentifier = "9531B4791D4E59D500DD63FD"
+            BuildableName = "DeviceKit"
+            BlueprintName = "DeviceKit"
             ReferencedContainer = "container:DeviceKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -64,9 +85,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "95CBDB6E1BFD2B5F0065FC66"
-            BuildableName = "DeviceKit.framework"
-            BlueprintName = "DeviceKit-iOS"
+            BlueprintIdentifier = "9531B4791D4E59D500DD63FD"
+            BuildableName = "DeviceKit"
+            BlueprintName = "DeviceKit"
             ReferencedContainer = "container:DeviceKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -82,9 +103,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "95CBDB6E1BFD2B5F0065FC66"
-            BuildableName = "DeviceKit.framework"
-            BlueprintName = "DeviceKit-iOS"
+            BlueprintIdentifier = "9531B4791D4E59D500DD63FD"
+            BuildableName = "DeviceKit"
+            BlueprintName = "DeviceKit"
             ReferencedContainer = "container:DeviceKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

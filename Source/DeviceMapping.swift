@@ -6,6 +6,8 @@
 //
 //===----------------------------------------------------------------------===//
 
+import func Darwin.C.stdlib.getenv
+
 /**
  *  Semi-public protocol (should be private but we cannot (yet?) let a public
     protocol conform to a private one.
@@ -124,13 +126,17 @@ extension _DeviceMappable {
    */
   private static func mapSimulatorsAndComputers(identifier: String, isSimulator: Bool = false) -> Device? {
     // Simulator?
-    if let simID = String(utf8String: getenv("SIMULATOR_MODEL_IDENTIFIER")) {
-      return mapIdentifierToDevice(identifier: simID, isSimulator: true)
+    // Compiler warning needs to be ignored, getenv returns an IUO which is only set in simulators
+    if let env = getenv("SIMULATOR_MODEL_IDENTIFIER"), env != nil {
+      if case let simID = String(cString: env), simID.characters.count > 0 {
+        return mapIdentifierToDevice(identifier: simID, isSimulator: true)
+      }
     } else {
       // is Computer
       // TODO
       return nil
     }
+return nil
   }
 
 }

@@ -12,7 +12,7 @@ import XCTest
 class DeviceKitTests: XCTestCase {
 
   func testPhone() {
-    
+
   }
 
 }

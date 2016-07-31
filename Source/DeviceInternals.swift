@@ -21,7 +21,7 @@ extension _DeviceInternals {
     uname(&systemInfo)
     let mirror = Mirror(reflecting: systemInfo.machine)
     return mirror.children.reduce("") { identifier, element in
-      if let scalar = element.value as? Int8 where scalar != 0 {
+      if let scalar = element.value as? Int8, scalar != 0 {
         return identifier + String(UnicodeScalar(UInt8(scalar)))
       } else {
         return identifier

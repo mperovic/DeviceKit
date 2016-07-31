@@ -29,7 +29,7 @@
 #########################
 
 #####
-# OS X temporary files that should never be committed
+# macOS temporary files that should never be committed
 #
 # c.f. http://www.westwind.com/reference/os-x/invisibles.html
 
@@ -55,7 +55,7 @@
 
 
 #
-# profile - REMOVED temporarily (on double-checking, I can't find it in OS X docs?)
+# profile - REMOVED temporarily (on double-checking, I can't find it in macOS docs?)
 #profile
 
 
@@ -137,8 +137,8 @@ xcuserdata/
 #     get rid of ALL personal settings, but KEEP SOME OF THEM
 #     - NB: you must manually uncomment the bits you want to keep
 #
-# NB: this *requires* git v1.8.2 or above; you may need to upgrade to latest OS X,
-#    or manually install git over the top of the OS X version
+# NB: this *requires* git v1.8.2 or above; you may need to upgrade to latest macOS,
+#    or manually install git over the top of the macOS version
 # NB: this is exclusive with OPTION 1 above
 #
 #xcuserdata/**/*
